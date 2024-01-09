@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prediksi Nama</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+       
+        <div class="box">
+            <h3>Prediksi Jenis Kelamin Sesuai Nama Depan</h3>
+          <div class="gender">
+            <div id="laki" class="laki">
+              <img src="./img/laki.png" alt="" width="60px" height="60px" />
+            </div>
+            <div id="perempuan" class="perempuan">
+              <img
+                src="./img/perempuan.jpeg"
+                alt=""
+                width="60px"
+                height="60px"
+              />
+            </div>
+          </div>
+          <div class="container">
+            <label for="name">Prediksi Nama </label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              plseholder="Masukkan Nama Disini ...."
+              onkeydown="prediksi(event)"
+            />
+            <div id="prediksi"></div>
+          </div>
+          <button class="btn-refresh"onclick="refresh()">Refresh</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
